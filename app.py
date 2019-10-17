@@ -31,8 +31,7 @@ class City(db.Model):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    
-''' WRITE A DOCSTRING ABOUT DATABASE HERE '''
+    ''' WRITE A DOCSTRING ABOUT DATABASE HERE '''
 
     if request.method == 'POST':
         new_city = request.form.get('city')
