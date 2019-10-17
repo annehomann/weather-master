@@ -2,4 +2,3 @@ __pycache__
 .DS_Store
 .env
 weather-comm.py
-w_master.png
