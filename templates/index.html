@@ -4,9 +4,12 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- CONTENT SECURITY POLICY -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' img/; img-src 'self' http://openweathermap.org data: http://www.w3.org;  style-src 'self' https://stackpath.bootstrapcdn.com https://fonts.gstatic.com https://fonts.google.com https://fonts.googleapis.com https://*.fontawesome.com/; font-src 'self' https://fonts.gstatic.com https://fonts.google.com https://fonts.googleapis.com https://*.fontawesome.com/; script-src 'self' https://code.jquery.com/ https://cdnjs.cloudflare.com https://stackpath.bootstrapcdn.com https://fonts.google.com https://*.fontawesome.com/;">
 
+        <title>Weather Master</title>
         <!-- Custom CSS -->
-        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/style.css') }}">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/style.css') }}" integrity="sha384-sED6w5iSqZY9Pmu9ytKaOhEHdYErM/NgYIW99ge2q75284Y4ZA9g5bK3t/dU8p3d" crossorigin="anonymous">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Google Fonts -->
