@@ -69,7 +69,7 @@
                                             <p class="info">
                                                 <span>{{ weather.city }}</span>
                                                 <br>
-                                                <span>{{ weather.temperature }}° C</span>
+                                                <span class="test">{{ weather.temperature }}° C</span>
                                                 <br> {{ weather.description }}
                                             </p>
                                         </div>
@@ -79,14 +79,17 @@
                             {% endfor %}
                         </div>
                         <div class="col">
-                            {% for temperature_level in clothes_data %}
+                            {% for weather in weather_data %}
                             <div class="card-body">
                                 <article class="media">
+
                                     <div class="media-content">
                                         <div class="content">
-                                            <p class="info"></p>
-                                                <span>{{ temperature_level }}</span>
+                                            <p class="info">
+                                                <span></span>
                                                 <br>
+                                                <span>humidity: {{ weather.humid }}%</span>
+                                                <br>clouds: {{ weather.cloudy }}%
                                             </p>
                                         </div>
                                     </div>

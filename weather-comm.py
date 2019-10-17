@@ -33,3 +33,21 @@ clothes_data = []
 
 
 # It is picking up London (first city in list) and displaying option [4]
+
+
+<div class="col">
+    {% for temperature_level in clothes_data %}
+    <div class="card-body">
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+                    <p class="info"></p>
+                        <span>{{ temperature_level }}</span>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </article>
+    </div>
+    {% endfor %}
+</div>

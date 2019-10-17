@@ -41,6 +41,8 @@ def index():
             'temperature' : response['main']['temp'],
             'description' : response ['weather'][0]['description'],
             'icon' : response['weather'][0]['icon'],
+            'humid' : response['main']['humidity'],
+            'cloudy' : response['clouds']['all']
         }
 
         weather_data.append(weather)
