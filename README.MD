@@ -49,11 +49,40 @@ If you are a hardcore Pylint fan and refuse to use anything else because you loo
 
 
 
+## SQLAlchemy tips for clearing database
+
+If you wish to delete some of the cities from the database because it's getting too long, in your terminal type the following commands:
+
+`sqlite3 weather.db`
+
+This command gives you access to the database
+
+`select * from city;`
+
+This command allows you to access all the city entries
+
+`delete from city where id = 5;`
+
+This command allows you to delete a city by its ID
+
+`.exit`
+
+Exits the database
+
+
+
 ## To Work On Next
 
 The following is what I would like to add for V2.0
 
 - The ability to delete cities from the page so the list doesn't become too long.
+- replace humidity/cloud reading with clothing recommendations.
+
+
+
+## Key Takeaways
+
+Learning Flask has been fun but quite challenging. I enjoyed the learning experience with this assignment and it has made me want to keep going and build other apps with more extensive APIs. Personally I still have a lot to learn and commit to memory but constant practice and coding will help with that. And also constant Googling like all good devs.
 
 
 

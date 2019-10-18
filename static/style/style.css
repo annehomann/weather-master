@@ -32,8 +32,16 @@ h1, h2, h3 {
   margin-left: 15px;
 }
 
-.test {
+.title {
+  font-weight: bold;
+}
+
+.temp_back {
   padding: 2px 8px 2px 8px;
   background-color: lightskyblue;
   border-radius: 10px;
+}
+
+.alert {
+  margin-top: 15px;
 }

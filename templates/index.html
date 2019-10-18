@@ -9,7 +9,7 @@
 
         <title>Weather Master</title>
         <!-- Custom CSS -->
-        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/style.css') }}" integrity="sha384-sED6w5iSqZY9Pmu9ytKaOhEHdYErM/NgYIW99ge2q75284Y4ZA9g5bK3t/dU8p3d" crossorigin="anonymous">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/style.css') }}" integrity="sha384-KOtIix3SgMZ5mUqmbJNXyZl24DHAP3lvsfCMdFQNE0Z0K53+gCc+PFIylZVWNElD" crossorigin="anonymous">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Google Fonts -->
@@ -44,6 +44,18 @@
                                         </button>
                                     </div>
                                 </div>
+                                {% with messages = get_flashed_messages(with_categories=true) %}
+                                {% if messages %}
+                                    {% for category, message in messages %}
+                                        {% set message_class = 'alert-success' %}
+
+                                        {% if category == 'error' %}
+                                            {% set message_class = 'alert-danger' %}
+                                        {% endif %}
+                                            <div class="alert {{ message_class }}" role="alert">{{ message }}</div>
+                                    {% endfor %}
+                                {% endif %}
+                                {% endwith %}
                             </form>
                         </div>
                     </div>
@@ -70,9 +82,9 @@
                                     <div class="media-content">
                                         <div class="content">
                                             <p class="info">
-                                                <span>{{ weather.city }}</span>
+                                                <span class="title">{{ weather.city }}</span>
                                                 <br>
-                                                <span class="test">{{ weather.temperature }}° C</span>
+                                                <span class="temp_back">{{ weather.temperature }}° C</span>
                                                 <br> {{ weather.description }}
                                             </p>
                                         </div>
