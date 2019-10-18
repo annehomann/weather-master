@@ -37,13 +37,15 @@ class City(DB.Model):
 def open_weather(city):
     ''' This function is to request weather data from the
     OpenWeatherMap API '''
-    url = f'http://api.openweathermap.org/data/2.5/weather?q={ city }&units=metric&appid=79430740a2523990da68bf455740aee5'
+
     # Environment variable, loads hidden API key
     # and stores in api_key variable
-    # load_dotenv()
-    # api_key = os.getenv('PROJECT_API_KEY')
-    # 
-    #response = requests.get(api_key).json()
+    api_key = os.getenv('PROJECT_API_KEY')
+    print(api_key)
+    
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={api_key}"
+    print(url)
+
     response = requests.get(url).json()
     return response
 
@@ -64,7 +66,7 @@ def index_get():
         # gets specific weather information
         response = open_weather(city.name)
 
-        # The core of the algorithm!
+        # Dictionary of responses from the API
         weather = {
             'city': city.name,
             'temperature': response['main']['temp'],

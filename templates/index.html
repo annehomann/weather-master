@@ -44,15 +44,15 @@
                                         </button>
                                     </div>
                                 </div>
-                                {% with messages = get_flashed_messages(with_categories=true) %}
-                                {% if messages %}
-                                    {% for category, message in messages %}
-                                        {% set message_class = 'alert-success' %}
+                                {% with notifications = get_flashed_messages(with_categories=true) %}
+                                {% if notifications %}
+                                    {% for category, notification in notifications %}
+                                        {% set notification_class = 'alert-success' %}
 
                                         {% if category == 'error' %}
-                                            {% set message_class = 'alert-danger' %}
+                                            {% set notification_class = 'alert-danger' %}
                                         {% endif %}
-                                            <div class="alert {{ message_class }}" role="alert">{{ message }}</div>
+                                            <div class="alert {{ notification_class }}" role="alert">{{ notification }}</div>
                                     {% endfor %}
                                 {% endif %}
                                 {% endwith %}
