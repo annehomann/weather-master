@@ -40,11 +40,11 @@ app.py:46:12: E1101: Instance of 'scoped_session' has no 'commit' member (no-mem
 ```
 
 This is linked to using SQLAlchemy and is a known problem when using Pylint. 
-More about the issue can be read about [here](https://github.com/PyCQA/pylint/issues/1973)
+More about the issue can be read about [here](https://github.com/PyCQA/pylint/issues/1973).
 
-However, when using Flake 8, the errors do not appear. So if you decide to clone/fork this repo to enhance this project further, I recommend you use Flake 8 to check that your code is PEP8 standard 
+However, when using Flake 8, the errors do not appear. So if you decide to clone/fork this repo to enhance this project further, I recommend you use Flake 8 to check that your code is PEP8 standard. 
 
-If you are a hardcore Pylint fan and refuse to use anything else because you loooove getting that sweet score feedback, then you can install a package called `pylint_flask_sqlalchemy` which omits those error messages as if they never existed. The docs are [here](https://pypi.org/project/pylint-flask-sqlalchemy/)
+If you are a hardcore Pylint fan and refuse to use anything else because you loooove getting that sweet score feedback, then you can install a package called `pylint_flask_sqlalchemy` which omits those error messages as if they never existed. The docs are [here](https://pypi.org/project/pylint-flask-sqlalchemy/).
 
 
 
@@ -52,7 +52,7 @@ If you are a hardcore Pylint fan and refuse to use anything else because you loo
 
 The following is what I would like to add for V2.0
 
-- The ability to delete cities from the page so the list doesn't become too long
+- The ability to delete cities from the page so the list doesn't become too long.
 
 
 
