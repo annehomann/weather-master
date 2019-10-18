@@ -33,7 +33,10 @@ class City(DB.Model):
 
 @APP.route('/', methods=['GET', 'POST'])
 def index():
-    ''' WRITE A DOCSTRING ABOUT DATABASE HERE '''
+    ''' Takes the user input, a city, and if it is a new query,
+        adds and stores it to the database.  A request is then made
+        to the API and the weather details of that city is retrieved and
+        displayed back to the user by HTML.'''
 
     if request.method == 'POST':
         new_city = request.form.get('city')
@@ -67,7 +70,7 @@ def index():
             'cloudy': response['clouds']['all']
         }
 
-        # Appends each city and it's weather information
+        # Appends each city and its weather information
         # to the waether_data list.
         weather_data.append(weather)
 
