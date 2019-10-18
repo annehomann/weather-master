@@ -2,7 +2,8 @@
 
 # WEATHER MASTER
 
-(w_master.png)
+![]((w_master.png)
+
 
 
 
