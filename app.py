@@ -21,6 +21,7 @@ APP = Flask(__name__)
 APP.config['DEBUG'] = True
 # The database where cities will be stored
 APP.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///weather.db'
+APP.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 DB = SQLAlchemy(APP)
 
