@@ -71,10 +71,15 @@ Exits the database
 
 ## To Work On Next
 
-The following is what I would like to add for V2.0
+The following is what I would like to add/work on for V2.0
 
 - The ability to delete cities from the page so the list doesn't become too long.
-- replace humidity/cloud reading with clothing recommendations.
+
+- Replace humidity/cloud reading with clothing recommendations.
+
+- User input of cities isn't case sensitive!! 🤦🏽‍♀️ So duplicates can still happen if written in different cases....
+
+  eg. ![](case_sensitive_error.png)
 
 
 
