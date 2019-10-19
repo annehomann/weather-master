@@ -82,6 +82,8 @@ The following is what I would like to add/work on for V2.0
   eg. 
   ![](case_sensitive-error.png)
 
+This is either something to research within SQLAlchemy or Jinja2, manipulating the input class in the HTML template .
+
 
 
 ## Key Takeaways
