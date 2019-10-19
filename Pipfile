@@ -11,6 +11,7 @@ flask = "*"
 flask-sqlalchemy = "*"
 requests = "*"
 gunicorn = "*"
+dotenv = "*"
 
 
 [dev-packages]
