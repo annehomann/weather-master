@@ -125,5 +125,6 @@ def index_post():
 
     return redirect(url_for('index_get'))
 
+
 if __name__ == "__main__":
     APP.run()
