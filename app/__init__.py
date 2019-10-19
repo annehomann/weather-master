@@ -41,10 +41,8 @@ def open_weather(city):
     # Environment variable, loads hidden API key
     # and stores in api_key variable
     api_key = os.getenv('PROJECT_API_KEY')
-    print(api_key)
     
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={api_key}"
-    print(url)
 
     response = requests.get(url).json()
     return response
