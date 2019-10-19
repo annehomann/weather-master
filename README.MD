@@ -9,9 +9,7 @@
 
 ## Flask API Assignment for Coder Academy 
 
-Weather Master is a Flask API that allows you to look up the weather forecast of any city in the world using the OpenWeatherMap API.
-
-both the application and the OpenWeatherMap API and a web browser and the application. The Weather Master presents a web page with an input where a user can type in a city. By clicking on the "Add City" button, the city is added to a database and then a request is made to the OpenWeatherMap API. The API returns the temperature, a brief description of the weather, a weather icon, humidity reading and cloud coverage reading. Using the bootstrap framework, this data is organised into two columns for clean display. 
+The Weather Master App utilises an algorithm that allows two-way communication to take place between both the application and the Open Weather Map API and a web browser and the application. The Weather Master presents a web page with an input where a user can type in a city. By clicking on the "Add City" button, the city is added to a database and then a request is made to the Open Weather Map API. The API returns the temperature, a brief description of the weather, a weather icon, humidity reading and cloud coverage reading. Using the bootstrap framework, this data is organised into two columns for clean display.  Error handling has been implemented where duplicate cities cannot be added and only valid cities will be accepted by the input.
 
 
 
@@ -20,7 +18,7 @@ both the application and the OpenWeatherMap API and a web browser and the applic
 - Flask
 - Requests
 - OS
-- Dotenv
+- Python-dotenv
 - SQLAlchemy
 - Flake8
 
@@ -83,6 +81,8 @@ The following is what I would like to add for V2.0
 ## Key Takeaways
 
 Learning Flask has been fun but quite challenging. I enjoyed the learning experience with this assignment and it has made me want to keep going and build other apps with more extensive APIs. Personally I still have a lot to learn and commit to memory but constant practice and coding will help with that. And also constant Googling like all good devs.
+
+My main goal is to learn more about classes and get comfortable with them. 👍
 
 
 
