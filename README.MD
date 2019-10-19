@@ -80,7 +80,7 @@ The following is what I would like to add/work on for V2.0
 - User input of cities isn't case sensitive!! 🤦🏽‍♀️ So duplicates can still happen if written in different cases....
 
   eg. 
-  ![](case_sensitive_error.png)
+  ![](case_sensitive-error.png)
 
 
 
